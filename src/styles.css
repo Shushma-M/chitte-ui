@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Slackey&display=swap");
+body {
+  background-color: #1f2937;
+}
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+  color: white;
+}
+.box:hover {
+  /* border-bottom: 1px solid #db2777; */
+  box-shadow: 0 4px 8px 0 #db2777, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 55%;
+}
+.box {
+  text-align: center;
+  padding: 0.5rem;
+}
+.headingDisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px;
+}
+.heading {
+  font-family: "Slackey", cursive;
+  display: grid;
+  grid-area: heading;
+  height: 15vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sidebar {
+  padding-top: 1rem;
+  position: sticky;
+  top: 10px;
+  display: grid;
+  grid-area: sidebar;
+  width: 15vh;
+  height: 75vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content {
+  display: grid;
+  grid-area: content;
+  width: 100%;
+  height: 75vh;
+}
+.layout {
+  display: grid;
+  grid-template-areas:
+    "heading heading heading"
+    "sidebar content content"
+    "sidebar content content";
+}
+.content-box {
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.displayFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.modalHeader {
+  position: relative;
+}
